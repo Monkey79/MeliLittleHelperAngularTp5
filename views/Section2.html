@@ -1,0 +1,16 @@
+<div class="btn-group" ng-controller="Section2Ctrl">
+    <div class="hero-unit">
+        <h1>Confirmation</h1>
+        <p>Hello {{nameReceived}}, how are you?, you are going to order: {{kewordReceived}}</p>
+        <p>
+            <a class="btn btn-primary btn-large" ng-click="section2BtnClickHndl($event)">Order</a>
+        </p>
+        <div class="row">
+            <div class="col-md-3" ng-repeat="meliHelperInfo in meliHelperInfoList">
+                <a ng-href="{{meliHelperInfo.permalink}}" class="thumbnail" target="_blank">
+                    <img ng-src="{{meliHelperInfo.thumbnail}}" alt="" style="height: 180px; width: 100%; display: block;">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
