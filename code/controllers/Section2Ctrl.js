@@ -13,6 +13,8 @@ function showMeliResult(resultsArr, $scope) {
 }
 
 myModule.controller("Section2Ctrl", function($scope, $state, $stateParams, $http) {
+    console.log("==SOY SECTION 2 CTRL====");
+
     $scope.nameReceived = (typeof $stateParams.name !== 'undefined')?$stateParams.name:'pepe';
     $scope.kewordReceived = (typeof $stateParams.keyword !== 'undefined')?$stateParams.keyword:'ipod';
 
